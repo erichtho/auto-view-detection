@@ -35,9 +35,10 @@ import logging
 def get_stanford_nlp():
 
     #
-    nlp = StanfordCoreNLP(STANFORD_NLP_PATH, memory='8g', port=9999, lang='zh', quiet=False, logging_level=logging.DEBUG)
+    nlp = StanfordCoreNLP(STANFORD_NLP_PATH, memory='8g', port=8897, lang='zh', quiet=False, logging_level=logging.DEBUG)
 
     return nlp
+
 
 def reconstruct_tree(tree_list, wordlist=None, with_name=False):
     """
