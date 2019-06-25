@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-view-detector</title>
+    <script type="text/javascript" src="/static/config.js"></script>
+    <script type="text/javascript" src="/static/action.js" defer></script>
+    <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+
+
+</head>
+<body>
+
+    <div id="head">
+        <div id="'img">
+            <img src="/static/bucciaratti2.png" id="bucciaratti"/>
+        </div>
+        <p id="title">新闻人物观点检测</p>
+        <p id="author">by 一个人也要成为Gangstar</p>
+    </div>
+
+    <div id="input">
+        <textarea id="sentence" required=true rows="30" cols="80" placeholder="请输入要检测的文本"></textarea>
+        <div id="but">
+            <button id="submit">提交</button>
+            <button id="clear">清除</button>
+        </div>
+
+
+    </div>
+
+    <div id="loadingImg" style="display:none"><img src="/static/loading.gif">计算中...</div>
+
+    <div id="result" style="visibility: hidden">
+        <!--<p>结果</p>-->
+        <table id="views">
+            <thead>
+                <tr>
+                    <th>人物</th>
+                    <th>动词</th>
+                    <th>观点</th>
+                </tr>
+            </thead>
+
+            <tbody id="viewsBody">
+
+            </tbody>
+
+        </table>
+    </div>
+</body>
+</html>
