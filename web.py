@@ -68,7 +68,7 @@ def build_application(env='dev'):
 
 host_dict = {
     'dev': ('localhost', 8000, True),
-    'product': ('localhost', 8898, False)
+    'product': ('0.0.0.0', 8898, False)
 }
 
 
